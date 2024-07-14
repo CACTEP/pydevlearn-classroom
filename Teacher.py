@@ -1,10 +1,10 @@
 from typing import List
-import Human
-import Classroom
-import Subjects
+from Human import Human
+from Classroom import Classroom
+from Subjects import Subject
 
 class Teacher(Human):
-    _homeroom_class: Classroom | None
+    _homeroom_class: Classroom or None
     _subjects: List[Subject]
 
     def __init__(self, name, last_name, *subjects, group=None):
