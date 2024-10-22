@@ -7,7 +7,7 @@ class Teacher(Human):
     _homeroom_class: Classroom or None
     _subjects: List[Subject]
 
-    def __init__(self, name, last_name, *subjects, group=None):
+    def __init__(self, name: str, last_name: str, *subjects, group=None):
         #print("init Teacher")
         super().__init__(name, last_name)
         self._subjects = list(*subjects)
@@ -28,3 +28,6 @@ class Teacher(Human):
         else:
             print("У преподователя не задан класс")
             #Exception("У преподователя не задан класс")
+
+    def __repr__(self):
+        return f"Учитель(Имя = '{self.name}', Фамилия = '{self.last_name}', Предмет(ы) = {self.subjects})"
