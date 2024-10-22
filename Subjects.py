@@ -6,3 +6,7 @@ class Subject(Enum):
     FOREAN_LANG = 'Английский Язык'
     HISTORY = "История"
     PAINTING = "Рисование"
+    PHYSICS = 'Физика'
+    CHEMISTRY = 'Химия'
+    BIOLOGY = 'Биология'
+    GEOGRAPHY = 'География'
